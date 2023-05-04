@@ -9,6 +9,9 @@ export class DiretivasEstruturaisComponent implements OnInit {
 
   public condition: boolean = true;
   public conditionClick: boolean = true;
+  public championList: Array<{name: string}> = [ { name: "Braum" }, { name: "Alistar" }, 
+    { name: "Leona" }, { name: "Thresh" }, { name: "Maokai" }, { name: "Nautilus" }, 
+    { name: "Rakan" }, { name: "Sejuani" }, { name: "Shen" }, { name: "Rumble" } ];
 
   constructor(){}
 
@@ -20,5 +23,13 @@ export class DiretivasEstruturaisComponent implements OnInit {
 
   public onClick(): void {
     this.conditionClick = this.conditionClick === true ? false : true;
+  }
+
+  public onClickAddList(): void{
+    this.championList.push({ name: "Teemo" });
+  }
+
+  public onClickRemoveList(event: number): void {
+    this.championList.splice(event, 1);
   }
 }

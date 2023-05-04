@@ -9,3 +9,11 @@
 <p *ngIf="!conditionClick">False - Condition click</p>
 
 <button (click)="onClick()">Clique aqui</button>
+
+<hr>
+
+<ul>
+    <li *ngFor="let champion of championList; let i = index;" (click)="onClickRemoveList(i)">[ {{ i }} ] - {{ champion.name }}</li>
+</ul>
+
+<button (click)="onClickAddList()">Adicionar</button>
