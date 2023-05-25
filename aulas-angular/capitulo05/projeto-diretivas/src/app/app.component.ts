@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <app-title></app-title>
     <app-diretivas-estruturais></app-diretivas-estruturais>
+    <app-diretivas-atributos></app-diretivas-atributos>
     <router-outlet></router-outlet>
   `
 })

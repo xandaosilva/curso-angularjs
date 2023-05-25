@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 import { TitleComponent } from './title/title.component';
 import { FormsModule } from '@angular/forms';
+import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DiretivasEstruturaisComponent,
-    TitleComponent
+    TitleComponent,
+    DiretivasAtributosComponent
   ],
   imports: [
     BrowserModule,
