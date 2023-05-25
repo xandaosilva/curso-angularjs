@@ -13,6 +13,8 @@ export class DiretivasEstruturaisComponent implements OnInit {
     { name: "Leona" }, { name: "Thresh" }, { name: "Maokai" }, { name: "Nautilus" }, 
     { name: "Rakan" }, { name: "Sejuani" }, { name: "Shen" }, { name: "Rumble" } ];
 
+  public name: string = "";
+
   constructor(){}
 
   ngOnInit(): void {
