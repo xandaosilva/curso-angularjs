@@ -12,3 +12,7 @@
 <ul>
     <li *ngFor="let item of list">{{ item.name }}</li>
 </ul>
+
+<ng-template ngFor let-item [ngForOf]="list">
+    <p>{{ item.name }}</p>
+</ng-template>
