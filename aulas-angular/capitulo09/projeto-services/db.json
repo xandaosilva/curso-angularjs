@@ -1,85 +1,108 @@
 {
-    "list-food": [
-        { 
-            "id": 1, 
-            "name": "Feijoada" 
-        },
-        { 
-            "id": 2, 
-            "name": "Moqueca" 
-        
-        },
-        { 
-            "id": 3, 
-            "name": "Acarajé" 
-        },
-        { 
-            "id": 4, 
-            "name": "Pato no Tucupi" 
-        },
-        { 
-            "id": 5, 
-            "name": "Tacacá" 
-        },
-        { 
-            "id": 6, 
-            "name": "Baião de Dois" 
-        },
-        { 
-            "id": 7, 
-            "name": "Arroz com Pequi" 
-        },
-        { 
-            "id": 8, 
-            "name": "Arroz Carreteiro" 
-        },
-        { 
-            "id": 9, 
-            "name": "Feijão Tropeiro" 
-        },
-        { 
-            "id": 10, 
-            "name": "Paçoca de Carne Seca" 
-        },
-        { 
-            "id": 11, 
-            "name": "Barreado" 
-        },
-        { 
-            "id": 12, 
-            "name": "Galinhada" 
-        },
-        { 
-            "id": 13, 
-            "name": "Frango ao molho pardo" 
-        },
-        { 
-            "id": 14, 
-            "name": "Virado à Paulista" 
-        },
-        { 
-            "id": 15, 
-            "name": "Camarão na Moranga" 
-        },
-        { 
-            "id": 16, 
-            "name": "Pizza Margherita" 
-        },
-        { 
-            "id": 17, 
-            "name": "Lasanha à Bolonhesa" 
-        },
-        { 
-            "id": 18, 
-            "name": "Salada Caesar" 
-        },
-        { 
-            "id": 19, 
-            "name": "Pudim de Leite Condensado" 
-        },
-        { 
-            "id": 20, 
-            "name": "Omelete de queijo" 
-        }
-    ]
+  "list-food": [
+    {
+      "id": 1,
+      "name": "Feijoada"
+    },
+    {
+      "id": 2,
+      "name": "Moqueca"
+    },
+    {
+      "id": 3,
+      "name": "Acarajé"
+    },
+    {
+      "id": 4,
+      "name": "Pato no Tucupi"
+    },
+    {
+      "id": 5,
+      "name": "Tacacá"
+    },
+    {
+      "id": 6,
+      "name": "Baião de Dois"
+    },
+    {
+      "id": 7,
+      "name": "Arroz com Pequi"
+    },
+    {
+      "id": 8,
+      "name": "Arroz Carreteiro"
+    },
+    {
+      "id": 9,
+      "name": "Feijão Tropeiro"
+    },
+    {
+      "id": 10,
+      "name": "Paçoca de Carne Seca"
+    },
+    {
+      "id": 11,
+      "name": "Barreado"
+    },
+    {
+      "id": 12,
+      "name": "Galinhada"
+    },
+    {
+      "id": 13,
+      "name": "Frango ao molho pardo"
+    },
+    {
+      "id": 14,
+      "name": "Virado à Paulista"
+    },
+    {
+      "id": 15,
+      "name": "Camarão na Moranga"
+    },
+    {
+      "id": 16,
+      "name": "Pizza Margherita"
+    },
+    {
+      "id": 17,
+      "name": "Lasanha à Bolonhesa"
+    },
+    {
+      "id": 18,
+      "name": "Salada Caesar"
+    },
+    {
+      "id": 19,
+      "name": "Pudim de Leite Condensado"
+    },
+    {
+      "id": 20,
+      "name": "Omelete de queijo"
+    },
+    {
+      "id": 21,
+      "name": "Dobradinha"
+    },
+    {
+      "id": 22,
+      "name": "Espetinho de queijo"
+    },
+    {
+      "id": 23,
+      "name": "Torresmo"
+    },
+    {
+      "id": 24,
+      "name": "Pizza de bacon"
+    },
+    {
+      "id": 25,
+      "name": "Pizza de presunto e queijo"
+    },
+    {
+      "id": 26,
+      "name": "Sorvete de chocolate"
+    }
+  ]
 }
