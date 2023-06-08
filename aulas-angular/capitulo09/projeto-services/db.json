@@ -1,12 +1,12 @@
 {
   "list-food": [
     {
-      "id": 1,
-      "name": "Feijoada"
+      "name": "Feijoada com couve",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Moqueca"
+      "name": "Moqueca de peixe",
+      "id": 2
     },
     {
       "id": 3,
@@ -81,28 +81,12 @@
       "name": "Omelete de queijo"
     },
     {
-      "id": 21,
-      "name": "Dobradinha"
+      "name": "Dobradinha",
+      "id": 21
     },
     {
-      "id": 22,
-      "name": "Espetinho de queijo"
-    },
-    {
-      "id": 23,
-      "name": "Torresmo"
-    },
-    {
-      "id": 24,
-      "name": "Pizza de bacon"
-    },
-    {
-      "id": 25,
-      "name": "Pizza de presunto e queijo"
-    },
-    {
-      "id": 26,
-      "name": "Sorvete de chocolate"
+      "name": "Espetinho de queijo",
+      "id": 22
     }
   ]
 }
