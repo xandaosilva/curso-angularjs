@@ -1,0 +1,44 @@
+<form [formGroup]="saveForm" (ngSubmit)="submitForm()">
+    <div>
+        <label>Nome: </label>
+        <br>
+        <input type="text" formControlName="firstName">
+        <span class="alert" *ngIf="saveForm.get('firstName')?.errors && (saveForm.get('firstName')?.touched || saveForm.get('firstName')?.dirty)">
+            Preencha o campo corretamente
+        </span>
+    </div>
+    <div>
+        <label>Sobrenome: </label>
+        <br>
+        <input type="text" formControlName="lastName">
+        <span class="alert" *ngIf="saveForm.get('lastName')?.errors && (saveForm.get('lastName')?.touched || saveForm.get('lastName')?.dirty)">
+            Preencha o campo corretamente ( mix 10 e max 20 caracteres ).
+        </span>
+    </div>
+    <div>
+        <label>Email: </label>
+        <br>
+        <input type="email" formControlName="email">
+    </div>
+    <br>
+    <div>
+        <button [disabled]="saveForm.invalid">Enviar</button>
+    </div>
+</form>
+
+<h3>Informações do formulário</h3>
+{{ saveForm.get("firstName")?.value }}
+{{ saveForm.get("lastName")?.value }}
+
+<hr>
+
+{{ saveForm.get("firstName")?.errors | json }}
+{{ saveForm.get("firstName")?.touched | json }}
+{{ saveForm.get("firstName")?.dirty | json }}
+
+<hr>
+
+{{ saveForm.get("lastName")?.errors | json }}
+
+<hr>
+{{ saveForm.get("email")?.errors | json }}
