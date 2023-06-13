@@ -11,6 +11,10 @@ const routes: Routes = [
       { path: ':id/:username', component: AboutComponent },
     ] 
   },
+  { 
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+  },
   { path: '404', component: PageNotFoundComponent },
   { path: '**', redirectTo: '404' }
 ];
