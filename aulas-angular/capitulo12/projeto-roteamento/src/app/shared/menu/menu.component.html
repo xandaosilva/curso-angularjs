@@ -2,13 +2,13 @@
     <nav>
         <ul>
             <li>
-                <a routerLink="/">Home</a>
+                <a routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</a>
             </li>
             <li>
-                <a routerLink="/about">Sobre</a>
+                <a routerLink="/about" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Sobre</a>
             </li>
             <li>
-                <a routerLink="/404">Página não encontrada</a>
+                <a routerLink="/404" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Página não encontrada</a>
             </li>
         </ul>
     </nav>
