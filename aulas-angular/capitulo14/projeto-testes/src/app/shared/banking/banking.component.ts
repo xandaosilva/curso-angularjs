@@ -15,16 +15,26 @@ export class BankingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public setToWithdraw(value: string): number{
+  public setToWithdraw(value: string): number | undefined{
     const withDraw = Number(value);
-    console.log(withDraw);
-    return withDraw;
+    
+    if(isNaN(withDraw) || this.account < withDraw) return;
+
+    this.account -= withDraw;
+    this.wallet += withDraw;
+
+    return this.wallet;
   }
   
-  public setDeposit(value: string): number{
+  public setDeposit(value: string): number | undefined{
     const deposit = Number(value);
-    console.log(deposit);
-    return deposit;
+
+    if(isNaN(deposit) || this.wallet < deposit) return;
+
+    this.wallet -= deposit;
+    this.account += deposit;
+
+    return this.account;
   }
 
   get getAccount(): number{
