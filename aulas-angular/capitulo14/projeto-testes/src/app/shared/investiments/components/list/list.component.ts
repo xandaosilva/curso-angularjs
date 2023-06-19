@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Investiments } from '../../model/investiments';
+import { ListInvestimentsService } from '../../services/list-investiments.service';
 
 @Component({
   selector: 'app-list',
@@ -15,8 +16,18 @@ export class ListComponent implements OnInit{
     { name: "Nubank", value: 100 }
   ];
 
-  constructor(){}
+  constructor(private listInvestimentsService: ListInvestimentsService){}
 
   ngOnInit(): void {
+    this.listInvestimentsService.list().subscribe(
+      {
+        next: (res: any) => {
+          console.log(res);
+        },
+        error: (error: any) => {
+          console.log(error);
+        }
+      }
+    )
   }
 }
