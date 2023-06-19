@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BankingComponent implements OnInit {
 
-  private account: number = 3000.00;
-  private wallet: number = 10000.00;
+  private account: number = 3000;
+  private wallet: number = 10000;
 
   constructor(){}
 
