@@ -4,12 +4,12 @@
     <p>Co: 99999-9</p>
 </div>
 <div>
-    <p>Saldo: R${{ getAccount }}</p>
-    <input type="text" #toWithdraw>
-    <button (click)="setToWithdraw(toWithdraw.value)">Sacar</button>
+    <p>Saldo: R$<span id="get-account">{{ getAccount }}</span></p>
+    <input type="text" #toWithdraw id="input-toWithDraw">
+    <button (click)="setToWithdraw(toWithdraw.value)" id="toWithdraw">Sacar</button>
 </div>
 <div>
-    <p>Carteira: R${{ getWallet }}</p>
-    <input type="text" #deposit>
-    <button (click)="setDeposit(deposit.value)">Depositar</button>
+    <p>Carteira: R$<span id="get-wallet">{{ getWallet }}</span></p>
+    <input type="text" #deposit id="input-deposit">
+    <button (click)="setDeposit(deposit.value)" id="deposit">Depositar</button>
 </div>

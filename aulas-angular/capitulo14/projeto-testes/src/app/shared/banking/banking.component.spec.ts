@@ -55,4 +55,23 @@ describe('BankingComponent', () => {
     expect(component.getWallet).toEqual(10000);
     expect(component.getAccount).toEqual(3000);
   });
+
+  // Testes de interface
+  it('(I) setDeposit should transfer from wallet to account', () => {
+    let el = fixture.debugElement.nativeElement;
+    el.querySelector('#input-deposit').value = 1000;
+    el.querySelector('#deposit').click();
+    fixture.detectChanges();
+    expect(el.querySelector('#get-account').textContent).toEqual('4000');
+    expect(el.querySelector('#get-wallet').textContent).toEqual('9000');
+  });
+
+  it('(I) setToWithdraw should transfer from account to wallet', () => {
+    let el = fixture.debugElement.nativeElement;
+    el.querySelector('#input-toWithDraw').value = 1000;
+    el.querySelector('#toWithdraw').click();
+    fixture.detectChanges();
+    expect(el.querySelector('#get-wallet').textContent).toEqual('11000');
+    expect(el.querySelector('#get-account').textContent).toEqual('2000');
+  });
 });
