@@ -18,9 +18,6 @@ export class ListComponent implements OnInit{
       {
         next: (res: any) => {
           this.investiments = res;
-        },
-        error: (error: any) => {
-          console.log(error);
         }
       }
     )
