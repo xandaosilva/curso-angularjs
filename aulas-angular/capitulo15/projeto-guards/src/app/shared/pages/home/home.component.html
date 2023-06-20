@@ -1,0 +1,8 @@
+<h1>Home</h1>
+
+<ul>
+    <li><a routerLink="account" [queryParams]="{ account: 'admin', password: '123' }">Account True</a></li>
+    <li><a routerLink="account" [queryParams]="{ account: 'ADMIN', password: '123456789' }">Account False</a></li>
+    <li><a routerLink="core">Dashboard</a></li>
+    <li><a routerLink="core/leads">Leads</a></li>
+</ul>
