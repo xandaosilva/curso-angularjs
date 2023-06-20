@@ -3,6 +3,6 @@
 <ul>
     <li><a routerLink="account" [queryParams]="{ account: 'admin', password: '123' }">Account True</a></li>
     <li><a routerLink="account" [queryParams]="{ account: 'ADMIN', password: '123456789' }">Account False</a></li>
-    <li><a routerLink="core">Dashboard</a></li>
-    <li><a routerLink="core/leads">Leads</a></li>
+    <li><a routerLink="core" [queryParams]="{ account: 'admin', password: '123' }">Dashboard</a></li>
+    <li><a routerLink="core/leads" [queryParams]="{ account: 'admin', password: '123' }">Leads</a></li>
 </ul>
