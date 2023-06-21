@@ -9,6 +9,7 @@ import { ETheme } from '../../enums/ETheme.enum';
 export class HeaderComponent implements OnInit {
 
   public icon: string = ETheme.ICON_MOON;
+  public textTheme: string = ETheme.TEXT_MOON;
 
   constructor(){}
 
@@ -18,5 +19,6 @@ export class HeaderComponent implements OnInit {
   public toggle(){
     const theme = document.body.classList.toggle('dark-theme');
     this.icon = (theme) ? ETheme.ICON_SUN : ETheme.ICON_MOON;
+    this.textTheme = (theme) ? ETheme.TEXT_SUN : ETheme.TEXT_MOON;
   }
 }
