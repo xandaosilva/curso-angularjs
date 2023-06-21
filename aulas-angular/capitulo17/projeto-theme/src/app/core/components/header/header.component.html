@@ -1,8 +1,12 @@
 <header>
     <img src="./assets/angular.svg" alt="AngularJs">
     <ul>
-        <li>Home</li>
-        <li>About</li>
+        <li>
+            <a [routerLink]="['']">Home</a>
+        </li>
+        <li>
+            <a [routerLink]="['about']">About</a>
+        </li>
         <li>
             <button type="button" (click)="toggle()">
                 <img src="./assets/{{ icon }}.svg" alt="Alterando o tema do site para {{ textTheme }}">
