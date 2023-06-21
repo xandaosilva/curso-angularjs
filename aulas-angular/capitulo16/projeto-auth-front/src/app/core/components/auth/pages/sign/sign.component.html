@@ -15,5 +15,5 @@
         </label>
         <button class="button-red" [disabled]="formAuth.invalid">Login</button>
     </form>
-    <span class="msg-error">Usuário ou senha incorreta</span>
+    <span class="msg-error" *ngIf="messageError">{{ messageError }}</span>
 </div>
